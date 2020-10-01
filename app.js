@@ -65,11 +65,57 @@ function addEngineer() {
     inquirer.prompt([
         {
             type: "input",
-            message: "",
-            name: "",
+            message: "What is the engineer's name?",
+            name: "engineerName"
         },
+        {
+            type: "input",
+            message: "What is the engineer's ID number?",
+            name: "engineerId"
+        },
+        {
+            type: "input",
+            message: "What is the engineer's email address?",
+            name: "engineerEmail"
+        },
+        {
+            type: "input",
+            message: "What is the engineer's Github username?",
+            name: "engineerGithub"
+        }
     ]).then(function(response) {
+        var engineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.engineerGithub);
+        teamMembers.unshift(engineer);
+        askForNewMember();
+    });
+}
 
+function addIntern() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "What is the intern's name?",
+            name: "internName"
+        },
+        {
+            type: "input",
+            message: "What is the intern's ID number?",
+            name: "internId"
+        },
+        {
+            type: "input",
+            message: "What is the intern's email address?",
+            name: "internEmail"
+        },
+        {
+            type: "input",
+            message: "What school did the intern attend?",
+            name: "internSchool"
+        }
+    ]).then(function(response) {
+        var intern = new Intern(response.internName, response.internId, response.internEmail, response.internSchool);
+        teamMembers.unshift(intern);
+        askForNewMember();
     });
 }
 
@@ -77,6 +123,23 @@ function addEngineer() {
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
+
+function askForNewMember() {
+    inquirer.prompt([
+        {
+            type: "list",
+            message: "Add another team member?",
+            name: "answer",
+            choices: ["Yes", "No"]
+        }
+    ]).then(function(response) {
+        if (response.answer === "Yes") {
+            addOthers();
+        } else if (response.answer === "No") {
+            const htmlRender = render(teamMembers);
+        };
+    });
+};
 
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
