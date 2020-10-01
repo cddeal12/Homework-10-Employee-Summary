@@ -2,16 +2,12 @@
 
 # Description
 This project creates an html file containing information about all the members of a dev team, as described by the user i
-n prompts. After inputting a manager and at least one other team member, the user can generate a simple html page contai
-ning each member's name, ID number, email address, and one contextual piece of information that depends on the member's
-role.
+n prompts. 
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
-* [Tests](#testing)
 * [Questions](#questions)
 
 <a name="installation"><a>
@@ -21,7 +17,8 @@ talled for this app to function properly.
 
 <a name="usage"><a>
 ### Usage
-BLANK
+After running the app, simply answer the prompts as they appear in the console. When you are prompted with a choice, use 
+the arrow keys to select your choice and press enter to confirm it.
 
 <a name="license"><a>
 ### License
@@ -42,17 +39,7 @@ RANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
 IGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, A
 RISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-<a name="contributing"><a>
-### Contributing Instructions
-After running the app, simply answer the prompts as they appear in the console. When you are prompted with a choice, use
- the arrow keys to select your choice and press enter to confirm it.
-
-<a name="testing"><a>
-### Testing Instructions
-
-
 <a name="questions"><a>
 ### Questions
-Please direct questions to my github account, cddeal12 found at [https://github.com/cddeal12](https://github.com/cddeal1
-2)
+Please direct questions to my github account, cddeal12 found at [https://github.com/cddeal12](https://github.com/cddeal12)
 Alternatively you can reach me by email at cddeal12@gmail.com
