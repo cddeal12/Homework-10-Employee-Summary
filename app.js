@@ -46,7 +46,7 @@ function addManager() {
         teamMembers.unshift(manager);
         addOthers();
     });
-}
+};
 
 // Asks the user what kind of team member they will add next, gets called after the manager is created, and after the user answers yes in askForNewMember()
 function addOthers() {
@@ -64,7 +64,7 @@ function addOthers() {
             addIntern();
         };
     });
-}
+};
 
 // Adds an engineer to the team array based on prompts to the user
 function addEngineer() {
@@ -94,7 +94,7 @@ function addEngineer() {
         teamMembers.unshift(engineer);
         askForNewMember();
     });
-}
+};
 
 // Adds an intern to the team array based on prompts to the user
 function addIntern() {
@@ -124,7 +124,7 @@ function addIntern() {
         teamMembers.unshift(intern);
         askForNewMember();
     });
-}
+};
 
 // Asks the user whether to add another member after each engineer and intern has been added, redirects to addOthers() if yes, writes the html if no
 function askForNewMember() {
